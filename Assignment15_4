@@ -1,0 +1,22 @@
+
+import os
+import sys
+def Comparefile(filename1,filename2):
+    fobj=open(filename1,'r')
+    nobj=open(filename2,'r')
+    content1=fobj.read()
+    content2=nobj.read()
+    if content1==content2:
+        print("success")
+    else:
+        print("failure")
+
+
+def main():
+    file1=sys.argv[1]
+    file2=sys.argv[2]
+    Comparefile(file1,file2)
+
+if __name__=="__main__":
+    main()
+
