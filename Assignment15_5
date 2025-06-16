@@ -1,0 +1,21 @@
+
+import os
+import sys
+def Comparefile(filename1,word):
+    count=0
+    fobj=open(filename1,'r')
+    content=fobj.read()
+    for i in range(0,len(content)):
+        if(content[i]==word):
+            count=count+1
+    print(count)
+    
+
+def main():
+    file1=sys.argv[1]
+    letter=sys.argv[2]
+    Comparefile(file1,letter)
+
+if __name__=="__main__":
+    main()
+
