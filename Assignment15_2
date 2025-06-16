@@ -1,0 +1,20 @@
+
+import os
+import sys
+def FileExistance(filename):
+
+
+    if os.path.exists(filename):
+        fobj=open(filename,"r")
+        print(fobj.read())
+    else:
+        print(filename,"does not exists")
+
+
+def main():
+    file=sys.argv[1]
+    FileExistance(file)
+
+if __name__=="__main__":
+    main()
+
